@@ -1,0 +1,60 @@
+*{
+	box-sizing:border-box;
+}
+body{
+	font-family:sans-serif;
+	line-height:1.5;
+	padding:0;
+	margin:0;
+	background:url('../photo source/blue moutain.jpg');
+	background-size:cover;
+	background-attachment:fixed;
+}
+.gallery{
+	width:80%;
+	margin:30px auto 0;
+	display:flex;
+	flex-wrap:wrap;
+	flex-direction:row;
+	justify-content:center;
+}
+.card{
+	margin:10px;
+	width:20%;
+	height:20%;
+	height:auto;
+	background:#f0f0f0;
+	border-radius:4px;
+	box-shadow:2px 3px 8px rgba(0,0,0,0.24);
+}
+.card .img-card{
+	position:relative;
+}
+.card .img-card img{
+	width:100%;
+	height:220px;
+	border-radius:4px 4px  0 0;
+}
+.img-card .details{
+	position:absolute;
+	background:rgba(241,241,241,0.8);
+	font-size:15px;
+	top:5px;
+	bottom:10px;
+	right:5px;
+	left:5px;
+	transition:0.5s ease-in-out;
+	transform:scaleY(0);
+}
+.card .img-card:hover .details{
+	transform:scaleY(1);
+}
+.img-card .details h1{
+	color:#D62C54;
+	text-align:center;
+}
+.card .name-card{
+	text-align:center;
+	color:#1C0898;
+	font-weight:bold;
+}
